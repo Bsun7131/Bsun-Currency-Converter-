@@ -6,55 +6,56 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #050816, #111827, #1e293b);
+  background: radial-gradient(circle at top left, #1e293b, #050816 65%);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 18px;
 }
 
 .container {
   width: 100%;
-  max-width: 430px;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 26px;
-  border-radius: 24px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
-  backdrop-filter: blur(12px);
+  max-width: 520px;
+  background: rgba(30, 41, 59, 0.92);
+  padding: 28px;
+  border-radius: 28px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .copyright {
   text-align: right;
-  font-size: 11px;
+  font-size: 12px;
   color: #cbd5e1;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 h1 {
   margin: 0;
-  font-size: 34px;
-  line-height: 1.1;
+  font-size: 36px;
+  line-height: 1.05;
+  font-weight: 900;
 }
 
 .developer {
-  color: #c084fc;
-  font-weight: bold;
-  margin-top: 10px;
+  color: #22d3ee;
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .subtitle {
-  color: #cbd5e1;
-  margin-bottom: 22px;
+  color: #e2e8f0;
+  margin-bottom: 24px;
 }
 
 input,
 select {
   width: 100%;
-  padding: 14px;
-  border: none;
+  padding: 16px;
   border-radius: 14px;
-  background: #0f172a;
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  background: #070b18;
   color: white;
   font-size: 16px;
   outline: none;
@@ -62,7 +63,7 @@ select {
 
 .currency-row {
   display: grid;
-  grid-template-columns: 1fr 50px 1fr;
+  grid-template-columns: 1fr 54px 1fr;
   gap: 10px;
   margin-top: 14px;
 }
@@ -73,43 +74,47 @@ select {
   background: #334155;
   color: white;
   font-size: 22px;
-  cursor: pointer;
+  font-weight: bold;
 }
 
 .convert-btn {
   width: 100%;
   margin-top: 18px;
-  padding: 15px;
+  padding: 16px;
   border: none;
   border-radius: 16px;
-  background: linear-gradient(135deg, #22c55e, #14b8a6);
-  color: white;
+  background: linear-gradient(135deg, #22d3ee, #14b8a6);
+  color: #04111f;
   font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
+  font-weight: 900;
 }
 
 .result-card {
-  margin-top: 22px;
-  padding: 20px;
-  border-radius: 18px;
-  background: rgba(15, 23, 42, 0.9);
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0f2744, #0b1328);
+  border: 1px solid rgba(34, 211, 238, 0.45);
   text-align: center;
 }
 
 #result {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0 0 12px;
 }
 
 #rateInfo {
-  color: #94a3b8;
+  color: #cbd5e1;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
+  .container {
+    padding: 22px;
+  }
+
   h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .currency-row {
@@ -117,6 +122,6 @@ select {
   }
 
   .swap-btn {
-    height: 46px;
+    height: 48px;
   }
 }
