@@ -15,8 +15,8 @@ body {
 }
 
 .container {
-  width: 1200%;
-  max-width: 900px;
+  width: 100%;
+  max-width: 700px;
   background: rgba(30, 41, 59, 0.92);
   padding: 28px;
   border-radius: 28px;
@@ -33,7 +33,7 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 52px;
   line-height: 1.05;
   font-weight: 900;
 }
@@ -99,7 +99,7 @@ select {
 }
 
 #result {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 900;
   margin: 0 0 12px;
 }
@@ -110,7 +110,7 @@ select {
 
 @media (max-width: 520px) {
   .container {
-    padding: 22px;
+    padding: 40px;
   }
 
   h1 {
