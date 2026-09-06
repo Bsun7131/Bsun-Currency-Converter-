@@ -197,19 +197,63 @@ select {
 }
 
 @media (max-width: 520px) {
+  body {
+    padding: 12px;
+    align-items: flex-start;
+  }
+
   .container {
-    padding: 40px;
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .copyright {
+    font-size: 11px;
+    margin-bottom: 16px;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 34px;
+    line-height: 1.05;
+  }
+
+  .developer {
+    font-size: 18px;
+    margin-top: 14px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-top: 14px;
+    margin-bottom: 20px;
+  }
+
+  input,
+  select {
+    padding: 14px;
+    font-size: 17px;
   }
 
   .currency-row {
     grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 14px;
   }
 
   .swap-btn {
-    height: 48px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .convert-btn {
+    margin-top: 16px;
+    padding: 14px;
+    font-size: 19px;
+  }
+
+  .result-card {
+    margin-top: 18px;
+    padding: 18px;
   }
 }
